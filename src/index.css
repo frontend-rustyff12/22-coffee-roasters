@@ -2,19 +2,143 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* .fraunces-<uniquifier> {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-} */
+:root {
+  --dark-cyan: #0e8784;
+  --dark-grey-blue: #333d4b;
+  --pale-orange: #fdd6ba;
+  --light-cream: #fefcf7; /* BG */
+  --grey: #83888f;
+}
 
-/* 
-.barlow-bold {
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  min-height: 100dvh;
+}
+
+/* Typography */
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 900;
+  color: var(--light-cream);
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 900;
+  /* color: var(--light-cream); */
+  color: var(--dark-grey-blue);
+}
+
+h2.number {
+  font-family: "Fraunces", serif;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 900;
+  color: var(--pale-orange);
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  color: var(--dark-grey-blue);
+}
+
+h3.larger {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 900;
+  color: var(--dark-grey-blue);
+}
+
+p {
   font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} */
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--light-cream);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h3.larger {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  height: 56px;
+  width: 217px;
+  background-color: var(--dark-cyan);
+  color: var(--light-cream);
+}
+
+/* Error page */
+.error-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #0e8784; */
+}
+
+/* Header */
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

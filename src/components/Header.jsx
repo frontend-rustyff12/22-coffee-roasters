@@ -1,0 +1,7 @@
+export default function Header() {
+  return (
+    <header>
+      <h2>Header goes here</h2>
+    </header>
+  );
+}
