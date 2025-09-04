@@ -1,7 +1,43 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router";
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  function toggleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <header>
-      <h2>Header goes here</h2>
+      <nav>
+        <img
+          src="/shared/desktop/logo.svg"
+          alt="Coffee Roasters company logo"
+        />
+
+        {isMobile ? (
+          !isMenuOpen ? (
+            <button onClick={toggleMenu}>
+              <img src="/shared/mobile/icon-hamburger.svg" alt="" />
+            </button>
+          ) : (
+            <button onClick={toggleMenu}>
+              <img src="/shared/mobile/icon-close.svg" alt="" />
+            </button>
+          )
+        ) : (
+          <p style={{ color: "black" }}>Desktop</p>
+        )}
+      </nav>
     </header>
   );
 }
