@@ -160,6 +160,26 @@ a {
   gap: 5rem;
   /* background-color: #0e8784; */
 }
+
+/* Header */
+header {
+  padding: 2rem 1.5rem 0rem;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav button {
+  border: none;
+}
+
+header nav button {
+  border: none;
+}
 /* footer {
   position: absolute;
   bottom: 0;
@@ -175,3 +195,9 @@ a {
   left: 0;
   width: 100%;
 } */
+
+@media screen and (min-width: 768px) {
+  header nav button {
+    display: none;
+  }
+}
