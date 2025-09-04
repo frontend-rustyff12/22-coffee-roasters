@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -35,7 +35,32 @@ export default function Header() {
             </button>
           )
         ) : (
-          <p style={{ color: "black" }}>Desktop</p>
+          <ul className="large-menu">
+            <li className="menu-item">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="menu-item">
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="menu-item">
+              <NavLink
+                to="/subscribe"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                reate your plan
+              </NavLink>
+            </li>
+          </ul>
         )}
       </nav>
     </header>
