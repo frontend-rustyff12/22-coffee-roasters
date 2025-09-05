@@ -213,6 +213,10 @@ header nav button img {
     center/cover;
   height: 400px;
 }
+.hero-container.subscribe {
+  background: url("/plan/mobile/image-hero-blackcup.jpg") no-repeat center/cover;
+  height: 400px;
+}
 
 .hero-content {
   /* margin: 6.25rem 1.5rem; */
@@ -222,6 +226,12 @@ header nav button img {
 }
 
 .hero-content.about {
+  height: 202px;
+  width: 280px;
+  text-align: center;
+}
+
+.hero-content.subscribe {
   height: 202px;
   width: 280px;
   text-align: center;
@@ -288,6 +298,10 @@ header nav button img {
     background: url("/about/tablet/image-hero-whitecup.jpg") no-repeat
       center/cover;
   }
+  .hero-container.subscribe {
+    background: url("/plan/tablet/image-hero-blackcup.jpg") no-repeat
+      center/cover;
+  }
 
   .hero-content {
     /* margin: 6.25rem 1.5rem; */
@@ -298,6 +312,12 @@ header nav button img {
 
   .hero-content.about {
     height: 164px;
+    width: 398px;
+    text-align: start;
+  }
+
+  .hero-content.subscribe {
+    height: 147px;
     width: 398px;
     text-align: start;
   }
@@ -335,6 +355,11 @@ header nav button img {
       center/cover;
   }
 
+  .hero-container.subscribe {
+    background: url("/plan/desktop/image-hero-blackcup.jpg") no-repeat
+      center/cover;
+  }
+
   .hero-content {
     /* margin: 6.25rem 1.5rem; */
     height: 368px;
@@ -344,6 +369,11 @@ header nav button img {
   .hero-content.about {
     height: 176px;
     width: 445px;
+  }
+
+  .hero-content.subscribe {
+    height: 182px;
+    width: 466px;
   }
 
   .hero-content h1 {
