@@ -169,6 +169,10 @@ header {
   padding: 2rem 1.5rem 0rem;
 }
 
+header img {
+  height: 18px;
+}
+
 header nav {
   width: 100%;
   display: flex;
@@ -177,14 +181,70 @@ header nav {
 }
 
 header nav button {
+  height: 18px;
   border: none;
 }
 
-header nav button {
-  border: none;
+header nav button img {
+  height: 18px;
+}
+
+/* Hero */
+
+.hero-wrapper {
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+}
+
+.hero-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url("/home/mobile/image-hero-coffeepress.jpg") no-repeat
+    center/cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container.about {
+  background: url("/about/mobile/image-hero-whitecup.jpg") no-repeat
+    center/cover;
+  height: 400px;
+}
+
+.hero-content {
+  /* margin: 6.25rem 1.5rem; */
+  height: 300px;
+  width: 280px;
+  text-align: center;
+}
+
+.hero-content.about {
+  height: 202px;
+  width: 280px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1.about {
+  font-size: 1.75rem;
+}
+
+.hero-content p {
+  margin-bottom: 2.5rem;
+}
+
+.hero-content .btn {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
+  /* Header */
   header nav button {
     display: none;
   }
@@ -208,8 +268,95 @@ header nav button {
   .menu-item a:hover {
     color: var(--dark-grey-blue);
   }
+
+  /* Hero */
+  .hero-wrapper {
+    padding: 3.375rem 2.5rem;
+  }
+
+  .hero-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: url("/home/tablet/image-hero-coffeepress.jpg") no-repeat
+      center/cover;
+    align-items: start;
+    padding: 6.5rem 3.625rem;
+  }
+
+  .hero-container.about {
+    background: url("/about/tablet/image-hero-whitecup.jpg") no-repeat
+      center/cover;
+  }
+
+  .hero-content {
+    /* margin: 6.25rem 1.5rem; */
+    height: 292px;
+    width: 398px;
+    text-align: start;
+  }
+
+  .hero-content.about {
+    height: 164px;
+    width: 398px;
+    text-align: start;
+  }
+
+  .hero-content h1 {
+    margin-right: 4.375rem;
+  }
+
+  .hero-content h1.about {
+    font-size: 2rem;
+  }
+
+  .hero-content .btn {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  /*  */
+  /* Hero */
+
+  .hero-wrapper {
+    width: 100%;
+    padding: 2.75rem 5rem;
+  }
+
+  .hero-container {
+    height: 600px;
+    width: 100%;
+    background: url("/home/desktop/image-hero-coffeepress.jpg") no-repeat
+      center/cover;
+  }
+
+  .hero-container.about {
+    background: url("/about/desktop/image-hero-whitecup.jpg") no-repeat
+      center/cover;
+  }
+
+  .hero-content {
+    /* margin: 6.25rem 1.5rem; */
+    height: 368px;
+    width: 493px;
+  }
+
+  .hero-content.about {
+    height: 176px;
+    width: 445px;
+  }
+
+  .hero-content h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h1.about {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content p {
+    margin-bottom: 3.5rem;
+  }
 }
