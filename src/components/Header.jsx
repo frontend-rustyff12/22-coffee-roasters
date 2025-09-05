@@ -57,7 +57,7 @@ export default function Header() {
                 to="/subscribe"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
-                reate your plan
+                Create your plan
               </NavLink>
             </li>
           </ul>
