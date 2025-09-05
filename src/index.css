@@ -6,6 +6,7 @@
   --dark-cyan: #0e8784;
   --light-cyan: #66d2cf;
   --dark-grey-blue: #333d4b;
+  --footer-blue: #2c343e;
   --pale-orange: #fdd6ba;
   --light-cream: #fefcf7; /* BG */
   --grey: #83888f;
@@ -208,11 +209,13 @@ header nav button img {
   align-items: center;
   justify-content: center;
 }
+
 .hero-container.about {
   background: url("/about/mobile/image-hero-whitecup.jpg") no-repeat
     center/cover;
   height: 400px;
 }
+
 .hero-container.subscribe {
   background: url("/plan/mobile/image-hero-blackcup.jpg") no-repeat center/cover;
   height: 400px;
@@ -251,6 +254,47 @@ header nav button img {
 
 .hero-content .btn {
   margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  margin: 4.5rem 1.5rem;
+  background-color: var(--footer-blue);
+  padding: 3.375rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-nav,
+.footer-nav-socials {
+  display: flex;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu-item a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  color: var(--grey);
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-menu-item a:hover,
+.footer-menu-item a.active {
+  color: var(--light-cream);
 }
 
 @media screen and (min-width: 768px) {
@@ -333,6 +377,22 @@ header nav button img {
   .hero-content .btn {
     margin: 0;
   }
+
+  /* Footer */
+  footer {
+    margin: 4.5rem 1.5rem;
+    height: 270px;
+    width: 100%;
+  }
+
+  .footer-content {
+    gap: 2rem;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -388,5 +448,24 @@ header nav button img {
 
   .hero-content p {
     margin-bottom: 3.5rem;
+  }
+
+  /* Footer */
+  footer {
+    margin: 5.5rem 1.5rem;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .footer-nav {
+    margin-bottom: 0rem;
   }
 }
