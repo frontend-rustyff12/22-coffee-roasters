@@ -1,4 +1,3 @@
-import CollectionCard from "./CollectionCard";
 import { collectionData } from "./homeData";
 export default function Collection() {
   return (
