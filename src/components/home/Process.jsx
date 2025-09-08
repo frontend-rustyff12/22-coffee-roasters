@@ -1,9 +1,15 @@
 import { processData } from "./homeData";
+import { Link } from "react-router";
+
 export default function Process() {
   return (
     <section className="process-container">
       <h3 className="process-title">How it works</h3>
-      <div className="process-decals"></div>
+      <div className="process-decals">
+        <div className="process-circle"></div>
+        <div className="process-circle"></div>
+        <div className="process-circle"></div>
+      </div>
       <div className="process-cards">
         {processData.map((item) => (
           <article className="process-card" key={item.id}>
@@ -15,6 +21,9 @@ export default function Process() {
           </article>
         ))}
       </div>
+      <Link to="subscribe" className="btn process-btn">
+        Create your plan
+      </Link>
     </section>
   );
 }
