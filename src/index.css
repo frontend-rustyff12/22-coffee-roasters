@@ -769,6 +769,26 @@ footer {
   .process-btn {
     margin-top: 2.75rem;
   }
+
+  /* About - Commitment */
+  .commitment {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    padding: 2.5rem;
+  }
+
+  .commitment-image {
+    width: 100%;
+    height: 470px;
+  }
+
+  .commitment-image img {
+    height: 100%;
+  }
+
+  .commitment-text {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -917,5 +937,15 @@ footer {
 
   .process-btn {
     margin-top: 4rem;
+  }
+
+  /* About - Commitment */
+  .commitment {
+    padding: 10.3125rem;
+    gap: 7.8125rem;
+  }
+
+  .commitment-text h2 {
+    font-size: 40px;
   }
 }
