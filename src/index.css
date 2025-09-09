@@ -502,6 +502,43 @@ footer {
   margin-top: 5rem;
 }
 
+/* About - Commitment */
+.commitment {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.commitment-image {
+  width: 98%;
+}
+
+.commitment-image img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.commitment-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  text-align: center;
+}
+
+.commitment-text h2 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 900;
+}
+.commitment-text p {
+  color: var(--dark-grey-blue);
+  line-height: 25px;
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   header nav button {
