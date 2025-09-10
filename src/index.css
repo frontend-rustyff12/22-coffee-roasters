@@ -580,6 +580,54 @@ footer {
   line-height: 28px;
 }
 
+/* About - Locations */
+.location {
+  margin: 7rem 1.5rem;
+}
+
+.location h3 {
+  color: var(--grey);
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.location-item {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.location-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  align-items: center;
+}
+
+.location-item img {
+  height: 51px;
+  width: 51px;
+}
+
+.location-item h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.location-item .location-details {
+  color: var(--dark-grey-blue);
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   header nav button {
@@ -853,6 +901,35 @@ footer {
     font-size: 32px;
     line-height: 48px;
   }
+
+  /* About - Locations */
+  .location {
+    margin: 9rem 2.5rem;
+  }
+
+  .location h3 {
+    text-align: start;
+  }
+
+  .locations-container {
+    display: flex;
+    flex-direction: row;
+    /* gap: 1rem; */
+    justify-content: space-between;
+  }
+
+  .location-item {
+    align-items: start;
+  }
+
+  .location-item > div {
+    align-items: start;
+  }
+
+  .location-item h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1046,6 +1123,19 @@ footer {
   }
 
   .quality-text p {
+    font-size: 16px;
+  }
+
+  /* About - Locations */
+  .location {
+    margin: 10.5rem 10.3125rem;
+  }
+
+  .location-item h2 {
+    font-size: 32px;
+  }
+
+  .location-item .location-details {
     font-size: 16px;
   }
 }
