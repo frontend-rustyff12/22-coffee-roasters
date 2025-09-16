@@ -453,15 +453,22 @@ footer {
   color: var(--light-cream);
 }
 
-/* Home- process */
-.process-container {
+/* Home- process  Subscribe - Process*/
+.process-container,
+.subscribe-process-container {
   margin: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.process-decals {
+.subscribe-process-container {
+  background-color: var(--footer-blue);
+  padding: 5rem 1.5rem;
+}
+
+.process-decals,
+.subscribe-process-decals {
   display: none;
 }
 
@@ -474,13 +481,15 @@ footer {
   color: var(--grey);
 }
 
-.process-cards {
+.process-cards,
+.subscribe-process-cards {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
 }
 
-.process-card {
+.process-card,
+.subscribe-process-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,7 +497,8 @@ footer {
   gap: 1.5rem;
 }
 
-.process-card-text {
+.process-card-text,
+.subscribe-process-card-text {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -496,6 +506,11 @@ footer {
 
 .process-card-text p {
   color: var(--dark-grey-blue);
+}
+
+.subscribe-process-card-text h3,
+.subscribe-process-card-text p {
+  color: var(--light-cream);
 }
 
 .process-btn {
@@ -711,7 +726,6 @@ footer {
 
   /* Home - Collection */
   .collection-container {
-    /* background-color: red; */
     margin: 4rem 6.125rem;
     display: flex;
     flex-direction: column;
@@ -778,18 +792,25 @@ footer {
     line-height: 48px;
   }
 
-  /* Home- process */
-  .process-container {
+  /* Home- process  Subscribe - Process*/
+  .process-container,
+  .subscribe-process-container {
     margin: 1.5rem 2.5rem;
     align-items: start;
     position: relative;
+  }
+
+  .subscribe-process-container {
+    margin: 0;
+    border-radius: 10px;
   }
 
   .process-title {
     margin-bottom: 2.5rem;
   }
 
-  .process-decals {
+  .process-decals,
+  .subscribe-process-decals {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -799,7 +820,8 @@ footer {
     margin: 0 auto 40px;
   }
 
-  .process-circle {
+  .process-circle,
+  .subscribe-process-circle {
     width: 31px;
     height: 31px;
     border-radius: 50%;
@@ -809,22 +831,26 @@ footer {
     z-index: 10;
   }
 
-  .process-circle:nth-of-type(0) {
+  .process-circle:nth-of-type(0),
+  .subscribe-process-circle:nth-of-type(0) {
     position: absolute;
     left: 0;
   }
 
-  .process-circle:nth-of-type(1) {
+  .process-circle:nth-of-type(1),
+  .subscribe-process-circle:nth-of-type(1) {
     position: absolute;
     left: 38%;
   }
 
-  .process-circle:nth-of-type(2) {
+  .process-circle:nth-of-type(2),
+  .subscribe-process-circle:nth-of-type(2) {
     position: absolute;
     left: 72%;
   }
 
-  .process-decals::before {
+  .process-decals::before,
+  .subscribe-process-decals::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -836,12 +862,14 @@ footer {
     z-index: 1;
   }
 
-  .process-cards {
+  .process-cards,
+  .subscribe-process-cards {
     flex-direction: row;
     gap: 1.75rem;
   }
 
-  .process-card {
+  .process-card,
+  .subscribe-process-card {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -849,10 +877,17 @@ footer {
     gap: 1.5rem;
   }
 
-  .process-card-text {
+  .process-card-text,
+  .subscribe-process-card-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .process-card-text h3,
+  .subscribe-process-card-text h3 {
+    max-width: 8ch;
+    white-space: normal;
   }
 
   .process-btn {
@@ -1059,20 +1094,28 @@ footer {
     gap: 3.5rem;
   }
 
-  /* Home- process */
+  /* Home- process Subscribe - Process*/
   .process-container {
     margin: 12.5rem 10.3125rem;
   }
 
-  .process-cards {
+  .subscribe-process-container {
+    margin: 10.5rem 5rem;
+    padding: 6.25rem 5.3125rem;
+  }
+
+  .process-cards,
+  .subscribe-process-cards {
     gap: 5.875rem;
   }
 
-  .process-circle:nth-of-type(2) {
+  .process-circle:nth-of-type(2),
+  .subscribe-process-circle:nth-of-type(2) {
     left: 75%;
   }
 
-  .process-decals::before {
+  .process-decals::before,
+  .subscribe-process-decals::before {
     right: 24%;
   }
 
