@@ -201,6 +201,7 @@ li {
 /* Header */
 header {
   padding: 2rem 1.5rem 0rem;
+  position: relative;
 }
 
 header img {
@@ -217,10 +218,42 @@ header nav {
 header nav button {
   height: 18px;
   border: none;
+  cursor: pointer;
 }
 
 header nav button img {
   height: 18px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: var(--light-cream);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 252, 247, 1) 0%,
+    rgba(254, 252, 247, 1) 50%,
+    rgba(254, 252, 247, 0.5) 100%
+  );
+  width: 100%;
+  height: 100dvh;
+  z-index: 10;
+  padding-top: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-item a {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--dark-grey-blue);
+  line-height: 32px;
+  letter-spacing: 0px;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -649,6 +682,10 @@ footer {
     display: none;
   }
 
+  header img {
+    height: 24px;
+  }
+
   .large-menu {
     display: flex;
     align-items: center;
@@ -659,9 +696,11 @@ footer {
     font-family: "Barlow", sans-serif;
     text-transform: uppercase;
     color: var(--grey);
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 15px;
     letter-spacing: 0.92px;
     cursor: pointer;
+    font-weight: 500;
   }
 
   .menu-item a.active,
