@@ -30,9 +30,38 @@ export default function Header() {
               <img src="/shared/mobile/icon-hamburger.svg" alt="" />
             </button>
           ) : (
-            <button onClick={toggleMenu}>
-              <img src="/shared/mobile/icon-close.svg" alt="" />
-            </button>
+            <>
+              <button onClick={toggleMenu}>
+                <img src="/shared/mobile/icon-close.svg" alt="" />
+              </button>
+
+              <ul className="mobile-menu">
+                <li className="menu-item">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="menu-item">
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    About
+                  </NavLink>
+                </li>
+                <li className="menu-item">
+                  <NavLink
+                    to="/subscribe"
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    Create your plan
+                  </NavLink>
+                </li>
+              </ul>
+            </>
           )
         ) : (
           <ul className="large-menu">
